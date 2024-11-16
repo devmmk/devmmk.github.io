@@ -7,7 +7,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), ViteImageOptimizer()],
-  base: "devmmk.github.io/", 
+  base: "https://devmmk.github.io/", 
   resolve: {
     alias: {
       "@styles": path.resolve(__dirname, "./src/styles"),
