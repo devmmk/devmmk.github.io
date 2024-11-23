@@ -1,3 +1,4 @@
+import TelegramIcon from "@components/icons/telegram";
 import { Github, LinkedIn, Mail, Phone } from "@icons";
 
 const Headline = () => (
@@ -38,6 +39,12 @@ const Headline = () => (
           className="hover:text-blue-400 transition-colors duration-300"
         >
           <Phone />
+        </a>
+        <a
+          href="https://t.me/+989308552187"
+          className="hover:text-blue-400 transition-colors duration-300"
+        >
+          <TelegramIcon />
         </a>
       </div>
     </div>

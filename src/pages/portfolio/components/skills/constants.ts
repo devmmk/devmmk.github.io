@@ -1,13 +1,14 @@
 export const skills = [
   {
     category: "Programming Languages",
-    items: ["Python", "JavaScript", "TypeScript", "PHP", "C#"],
+    items: ["Python", "Go", "JavaScript", "TypeScript", "PHP", "C#"],
   },
   {
     category: "Data Analysis",
     items: [
       "Business Intelligence",
       "Machine Learning",
+      "Data Mining"
     ]
   },
   {
@@ -16,8 +17,9 @@ export const skills = [
       "Django",
       "Laravel",
       "SQL Syntax",
-      "Webserver Config",
-      "Web Scraping"
+      "REST API",
+      "Web Scraping",
+      "Webserver Config"
     ],
   },
   {
