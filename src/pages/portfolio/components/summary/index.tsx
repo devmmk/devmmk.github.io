@@ -31,8 +31,8 @@ const Headline = () => (
           href="mailto:mahdi.kashani2006@gmail.com"
           className="hover:text-blue-400 transition-colors duration-300"
         >
-        </a>
           <Mail />
+        </a>
           <a
           href="tel:+989308552187"
           className="hover:text-blue-400 transition-colors duration-300"
