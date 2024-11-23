@@ -1,4 +1,4 @@
-import { Github, LinkedIn, Mail } from "@icons";
+import { Github, LinkedIn, Mail, Phone } from "@icons";
 
 const Headline = () => (
   <header className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
@@ -31,7 +31,13 @@ const Headline = () => (
           href="mailto:mahdi.kashani2006@gmail.com"
           className="hover:text-blue-400 transition-colors duration-300"
         >
+        </a>
           <Mail />
+          <a
+          href="tel:+989308552187"
+          className="hover:text-blue-400 transition-colors duration-300"
+        >
+          <Phone />
         </a>
       </div>
     </div>
