@@ -4,14 +4,6 @@ export const skills = [
     items: ["Python", "Go", "JavaScript", "TypeScript", "PHP", "C#"],
   },
   {
-    category: "Data Analysis",
-    items: [
-      "Business Intelligence",
-      "Machine Learning",
-      "Data Mining"
-    ]
-  },
-  {
     category: "Web Development",
     items: [
       "Django",
@@ -23,8 +15,12 @@ export const skills = [
     ],
   },
   {
-    category: "DevOps",
-    items: ["CI/CD", "Docker"],
+    category: "Data Analysis",
+    items: [
+      "Business Intelligence",
+      "Machine Learning",
+      "Data Mining"
+    ]
   },
   {
     category: "Development & Testing",
@@ -33,5 +29,9 @@ export const skills = [
       "Bash Script",
       "Linux Experience"
     ],
+  },
+  {
+    category: "DevOps",
+    items: ["CI/CD", "Docker"],
   },
 ];
