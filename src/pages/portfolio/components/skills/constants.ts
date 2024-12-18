@@ -1,25 +1,34 @@
 export const skills = [
   {
     category: "Programming Languages",
-    items: ["Python", "Go", "JavaScript", "TypeScript", "PHP", "C#"],
+    items: ["Python", "Go", "JavaScript", "TypeScript"],
   },
   {
     category: "Web Development",
     items: [
       "Django",
-      "Laravel",
-      "SQL Syntax",
-      "REST API",
-      "Web Scraping",
-      "Webserver Config"
+      "FastAPI",
+      "Flask",
+      "Socket"
     ],
   },
   {
-    category: "Data Analysis",
+    category: "Data Processing",
     items: [
-      "Business Intelligence",
-      "Machine Learning",
-      "Data Mining"
+      "Selenium",
+      "BeautifulSoup",
+      "Pandas",
+      "Numpy"
+    ]
+  },
+  {
+    category: "Database Systems",
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "MongoDB",
+      "Redis"
     ]
   },
   {
@@ -33,5 +42,5 @@ export const skills = [
   {
     category: "DevOps",
     items: ["CI/CD", "Docker"],
-  },
+  }
 ];

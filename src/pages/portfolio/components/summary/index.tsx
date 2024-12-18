@@ -4,16 +4,23 @@ import { Github, LinkedIn, Mail, Phone } from "@icons";
 const Headline = () => (
   <header className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-        M. Mahdi Kashani
-      </h1>
+      <div className="flex items-center gap-6 mb-4">
+      
+      {/* <img
+          src="/profile-photo.jpg"
+          alt="M. Mahdi Kashani"
+          className="w-24 h-24 rounded-full object-cover border-2 border-gray-700"
+        /> */}
+        
+        <h1 className="text-4xl sm:text-5xl font-bold">
+          M. Mahdi Kashani
+        </h1>
+      </div>
       <h2 className="text-xl sm:text-2xl text-gray-400 mb-6">
-        Back-End Engineer
+        Back-End Engineer | Python Specialist
       </h2>
       <p className="text-lg sm:text-xl text-gray-300 mb-8">
-      I am a Software Engineer and Backend Developer with over 4 years of freelance experience,
-      I specialize in Python and have expanded my expertise to other tools and languages, constantly learning and improving.
-      I'm currently living in Isfahan and studying Software Engineering at the associate degree level.
+      Experienced Back-End Engineer with 4+ years of freelance expertise in Python-based development, specializing in RESTful APIs, data processing, and scalable web solutions. Passionate about delivering clean, maintainable code and building robust backend systems. Currently pursuing an Associate Degree in Software Engineering, committed to continuous learning and professional growth.
       </p>
       <div className="flex space-x-6">
         <a
@@ -50,5 +57,4 @@ const Headline = () => (
     </div>
   </header>
 );
-
 export default Headline;
