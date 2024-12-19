@@ -1,5 +1,4 @@
-import TelegramIcon from "@components/icons/telegram";
-import { Github, LinkedIn, Mail, Phone } from "@icons";
+import { Github, LinkedIn, Mail, Phone, TelegramIcon } from "@icons";
 
 const Headline = () => (
   <header className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
@@ -54,7 +53,16 @@ const Headline = () => (
           <TelegramIcon />
         </a>
       </div>
+      <div className="mt-8">
+        <a
+          href="/resume.pdf"
+          className="inline-block px-6 py-2 bg-[#1f2937] text-white rounded-md hover:bg-[#374151] transition-colors duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download PDF Version
+        </a>
+      </div>
     </div>
   </header>
-);
-export default Headline;
+);export default Headline;
