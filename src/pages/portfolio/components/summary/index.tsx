@@ -1,4 +1,5 @@
 import { Github, LinkedIn, Mail, Phone, TelegramIcon } from "@icons";
+import pdfFile from '@assets/resume.pdf';
 
 const Headline = () => (
   <header className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
@@ -55,7 +56,7 @@ const Headline = () => (
       </div>
       <div className="mt-8">
         <a
-          href="/resume.pdf"
+          href={pdfFile}
           className="inline-block px-6 py-2 bg-[#1f2937] text-white rounded-md hover:bg-[#374151] transition-colors duration-300"
           target="_blank"
           rel="noopener noreferrer"
