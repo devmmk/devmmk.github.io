@@ -5,11 +5,11 @@ const Headline = () => (
     <div className="max-w-4xl mx-auto">
       <div className="flex items-center gap-6 mb-4">
       
-        <img
+        {/*<img
           src="profile-photo.jpg"
           alt="M. Mahdi Kashani"
           className="w-24 h-24 rounded-full object-cover border-2 border-gray-700"
-        />
+        />*/}
         
         <h1 className="text-4xl sm:text-5xl font-bold">
           M. Mahdi Kashani
