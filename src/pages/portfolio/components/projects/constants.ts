@@ -8,5 +8,10 @@ export const projects = [
     title: "Resume Website",
     description: "The source code of this website, written with react and typescript. You can edit and use it for yourself.",
     link: "https://github.com/devmmk/devmmk.github.io"
+  },
+  {
+    title: "ComBiz",
+    description: "Simple python script to generate commit messages with ai.",
+    link: "https://github.com/devmmk/ComBiz"
   }
 ];
