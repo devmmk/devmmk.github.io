@@ -13,14 +13,21 @@ const Headline = () => (
         />*/}
         
         <h1 className="text-4xl sm:text-5xl font-bold">
-          M. Mahdi Kashani
+          Mahdi (Matin) Kashani
         </h1>
       </div>
       <h2 className="text-xl sm:text-2xl text-gray-400 mb-6">
-        Back-End Engineer | Python Specialist
+        Server-Side Developer & Software Engineer
       </h2>
       <p className="text-lg sm:text-xl text-gray-300 mb-8">
-      Experienced Back-End Engineer with 4+ years of freelance expertise in Python-based development, specializing in RESTful APIs, data processing, and scalable web solutions. Passionate about delivering clean, maintainable code and building robust backend systems. Currently pursuing an Associate Degree in Software Engineering, committed to continuous learning and professional growth.
+Backend Developer with 4+ years of
+freelance experience in Python and
+PHP Skilled in building scalable
+server-side applications, REST APIs,
+and database-driven systems.
+Currently expanding into DevOps and
+cloud deployments to strengthen
+end-to-end delivery.
       </p>
       <div className="flex space-x-6">
         <a
