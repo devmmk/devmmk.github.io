@@ -8,7 +8,7 @@ const Headline = () => (
       
         {/*<img
           src="profile-photo.jpg"
-          alt="M. Mahdi Kashani"
+          alt="Mahdi Kashani"
           className="w-24 h-24 rounded-full object-cover border-2 border-gray-700"
         />*/}
         
