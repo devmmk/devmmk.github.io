@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme colors */
+  --bg-primary: #EBF4DD;          /* Light green background */
+  --bg-secondary: #D6E4D0;        /* Slightly darker green for secondary backgrounds */
+  --bg-tertiary: #C2D7C1;         /* Medium green for cards/panels - more visible */
+  --text-primary: #2D3A45;        /* Darker blue-gray text for better contrast */
+  --text-secondary: #4A5A66;      /* Darker green text for better contrast */
+  --text-accent: #1F2933;         /* Even darker text for high contrast */
+  --border-color: #8A9C82;        /* More visible border color */
+  --accent-primary: #7A9478;      /* Better contrast for button (not too dark) */
+  --accent-secondary: #90AB8B;    /* Secondary accent */
+  --hover-primary: #6B8573;       /* Hover state for better contrast */
+  --shadow-color: rgba(90, 120, 99, 0.5); /* Increased shadow for light theme */
+}
+
+.dark {
+  /* Dark theme colors */
+  --bg-primary: #3B4953;          /* Dark blue-gray background */
+  --bg-secondary: #4A5A66;        /* Slightly lighter blue-gray */
+  --bg-tertiary: #5A6A76;         /* Medium blue-gray for cards/panels */
+  --text-primary: #EBF4DD;        /* Light green text */
+  --text-secondary: #D6E4D0;      /* Lighter green text */
+  --text-accent: #F5FAF0;         /* Almost white for high contrast */
+  --border-color: #6B8573;        /* Muted green for borders */
+  --accent-primary: #7A9478;      /* Slightly darker accent for dark mode button */
+  --accent-secondary: #A3C2A8;    /* Lighter accent */
+  --hover-primary: #8A9C82;       /* Hover state */
+  --shadow-color: rgba(59, 73, 83, 0.5); /* Shadow for dark theme */
+}
+
+body {
+  @apply transition-colors duration-300;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
