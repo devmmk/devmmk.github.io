@@ -1,5 +1,5 @@
 {
-  "name": "mkaaf.ir",
+  "name": "devmmk.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -37,5 +37,5 @@
     "vite": "^5.4.11",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "homepage": "https://mkaaf.ir"
+  "homepage": "https://devmmk.github.io"
 }
