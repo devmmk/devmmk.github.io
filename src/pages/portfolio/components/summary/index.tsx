@@ -1,5 +1,5 @@
 import { Github, LinkedIn, Mail, Phone, Telegram } from "@icons";
-import profilePic from '@assets/profile.jpg';
+import profilePic from '@assets/profile.png';
 import pdfFile from '@assets/resume.pdf';
 
 const Summary = () => (
