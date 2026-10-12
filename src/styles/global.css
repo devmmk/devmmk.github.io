@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme colors */
+  --bg-primary: #EBF4DD;          /* Light green background */
+  --bg-secondary: #D6E4D0;        /* Slightly darker green for secondary backgrounds */
+  --bg-tertiary: #C2D7C1;         /* Medium green for cards/panels - more visible */
+  --text-primary: #2D3A45;        /* Darker blue-gray text for better contrast */
+  --text-secondary: #4A5A66;      /* Darker green text for better contrast */
+  --text-accent: #1F2933;         /* Even darker text for high contrast */
+  --border-color: #8A9C82;        /* More visible border color */
+  --accent-primary: #7A9478;      /* Better contrast for button (not too dark) */
+  --accent-secondary: #90AB8B;    /* Secondary accent */
+  --hover-primary: #6B8573;       /* Hover state for better contrast */
+  --shadow-color: rgba(90, 120, 99, 0.5); /* Increased shadow for light theme */
+}
+
+.dark {
+  /* Dark theme colors */
+  --bg-primary: #3B4953;          /* Dark blue-gray background */
+  --bg-secondary: #4A5A66;        /* Slightly lighter blue-gray */
+  --bg-tertiary: #5A6A76;         /* Medium blue-gray for cards/panels */
+  --text-primary: #EBF4DD;        /* Light green text */
+  --text-secondary: #D6E4D0;      /* Lighter green text */
+  --text-accent: #F5FAF0;         /* Almost white for high contrast */
+  --border-color: #6B8573;        /* Muted green for borders */
+  --accent-primary: #7A9478;      /* Slightly darker accent for dark mode button */
+  --accent-secondary: #A3C2A8;    /* Lighter accent */
+  --hover-primary: #8A9C82;       /* Hover state */
+  --shadow-color: rgba(59, 73, 83, 0.5); /* Shadow for dark theme */
+}
+
+body {
+  @apply transition-colors duration-300;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Print / PDF export: always light theme, no interactive-only UI */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  :root,
+  .dark {
+    --bg-primary: #ffffff;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f2f6ef;
+    --text-primary: #2d3a45;
+    --text-secondary: #4a5a66;
+    --text-accent: #1f2933;
+    --border-color: #a9bba1;
+    --accent-primary: #7a9478;
+    --accent-secondary: #90ab8b;
+    --hover-primary: #6b8573;
+    --shadow-color: rgba(90, 120, 99, 0.12);
+  }
+
+  /* Tighter vertical rhythm so the document paginates without big gaps */
+  section,
+  header,
+  footer {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* The print viewport is narrower than the md breakpoint, so the container
+     would cap at 640px and every grid would collapse to one column. */
+  .container {
+    max-width: 100% !important;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  /* Keep the profile header whole, and never orphan a heading from its content */
+  header {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  .print-hidden {
+    display: none !important;
+  }
+}
